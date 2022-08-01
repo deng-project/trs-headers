@@ -1,4 +1,4 @@
-/// libdas: DENG asset handling management library
+/// trs-headers: Linear algebra structurs for DENG project
 /// licence: Apache, see LICENCE file
 /// file: Matrix.h - Matrix structures header
 /// author: Karl-Mihkel Ott
@@ -6,7 +6,7 @@
 #ifndef MATRIX_H
 #define MATRIX_H
 
-namespace Libdas {
+namespace TRS {
 
     /**
      * 2x2 matrix structure

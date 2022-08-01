@@ -1,18 +1,18 @@
-// libdas: DENG asset handling management library
-// licence: Apache, see LICENCE file
-// file: Quaternion.h - Quaternion structure implementation
-// author: Karl-Mihkel Ott
+/// trs-headers: Linear algebra structurs for DENG project
+/// licence: Apache, see LICENCE file
+/// file: Quaternion.h - Quaternion structure implementation
+/// author: Karl-Mihkel Ott
 
 #ifndef QUATERNION_H
 #define QUATERNION_H
 
-#ifndef USE_SIMD
-#define USE_SIMD
+#ifndef TRS_USE_SIMD
+#define TRS_USE_SIMD
     #include <xmmintrin.h>
     #include <smmintrin.h>
 #endif
 
-namespace Libdas {
+namespace TRS {
 
     /// Fast 3D vector cross product using SIMD instructions
     inline __m128 FastCross(const __m128 &_vec1, const __m128 &_vec2) {

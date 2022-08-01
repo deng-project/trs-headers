@@ -1,4 +1,4 @@
-/// libdas: DENG asset handling management library
+/// trs-headers: Linear algebra structurs for DENG project
 /// licence: Apache, see LICENCE file
 /// file: Vector.h - Vector structures header
 /// author: Karl-Mihkel Ott
@@ -6,11 +6,11 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
-#ifndef USE_SIMD
+#ifndef TRS_USE_SIMD
     #include <xmmintrin.h>
 #endif
 
-namespace Libdas {
+namespace TRS {
 
     /**
      * 2D vector structure

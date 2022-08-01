@@ -1,4 +1,4 @@
-/// libdas: DENG asset handling management library
+/// trs-headers: Linear algebra structurs for DENG project
 /// licence: Apache, see LICENCE file
 /// file: Iterators.h - Iterators for point, vector and matrix structures
 /// author: Karl-Mihkel Ott
@@ -6,7 +6,7 @@
 #ifndef ITERATORS_H
 #define ITERATORS_H
 
-namespace Libdas {
+namespace TRS {
 
     /**
      * Iterator class for point and vector structures
