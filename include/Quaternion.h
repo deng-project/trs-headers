@@ -95,6 +95,14 @@ namespace TRS {
             return out;
         }
 
+        inline bool operator==(const Quaternion &_q) const {
+            return x == _q.x && y == _q.y && z == _q.z && w == _q.w;
+        }
+
+        inline bool operator!=(const Quaternion &_q) const {
+            return x != _q.x || y != _q.y || z != _q.z || w != _q.w;
+        }
+
         /**
          * Calculate magnitude of quaternion
          */
