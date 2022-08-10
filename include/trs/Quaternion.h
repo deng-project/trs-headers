@@ -36,7 +36,7 @@ namespace TRS {
         return _mm_cvtss_f32(sums_reg);
     }
 
-    /// Quaternion structure for Libdas
+    /// Quaternion structure for TRS
     struct Quaternion {
         float x, y, z, w;
 
@@ -156,7 +156,7 @@ namespace TRS {
         }
 
 
-        static Quaternion MatrixToQuaternion(const Libdas::Matrix4<float> &_mat) {
+        static Quaternion MatrixToQuaternion(const TRS::Matrix4<float> &_mat) {
             Quaternion q;
             float diag_sum = _mat.row1.first + _mat.row2.second + _mat.row3.third;
 
