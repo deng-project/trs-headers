@@ -25,16 +25,16 @@ namespace TRS {
     }
 
 
-    inline float FastDot(const __m128 &_vec1, const __m128 &_vec2) {
-        __m128 mul_res, shuf_reg, sums_reg;
-        mul_res = _mm_mul_ps(_vec1, _vec2);
+	inline float FastDot(const __m128 &_vec1, const __m128 &_vec2) {
+		__m128 mul_res, shuf_reg, sums_reg;
+		mul_res = _mm_mul_ps(_vec1, _vec2);
 
-        shuf_reg = _mm_movehdup_ps(mul_res);
-        sums_reg = _mm_add_ps(mul_res, shuf_reg);
-        shuf_reg = _mm_movehl_ps(shuf_reg, sums_reg);
-        sums_reg = _mm_add_ss(sums_reg, shuf_reg);
-        return _mm_cvtss_f32(sums_reg);
-    }
+		shuf_reg = _mm_movehdup_ps(mul_res);
+		sums_reg = _mm_add_ps(mul_res, shuf_reg);
+		shuf_reg = _mm_movehl_ps(shuf_reg, sums_reg);
+		sums_reg = _mm_add_ss(sums_reg, shuf_reg);
+		return _mm_cvtss_f32(sums_reg);
+	}
 
     /// Quaternion structure for TRS
     struct Quaternion {
