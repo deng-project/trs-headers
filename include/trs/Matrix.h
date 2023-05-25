@@ -49,6 +49,9 @@ namespace TRS {
         bool operator==(const Matrix2<T> &_mat) const;
         bool operator!=(const Matrix2<T> &_mat) const;
 
+        Vector2<T>& operator[] (size_t i) const { return (&row1)[i]; }
+        Vector2<T> operator[] (size_t i) { return (&row1)[i]; }
+
 
         /** 
          * Find the determinant of current matrix instance
@@ -485,6 +488,9 @@ namespace TRS {
         void operator/=(const T &_c);
         bool operator==(const Matrix3<T> &_mat) const;
         bool operator!=(const Matrix3<T> &_mat) const;
+
+        Vector3<T> operator[](size_t i) const { return (&row1)[i]; }
+        Vector3<T>& operator[](size_t i) { return (&row1)[i]; }
         /**
          * Find the determinant of current matrix instance
          */
@@ -986,6 +992,9 @@ namespace TRS {
         void operator/=(const T &_c);
         bool operator==(const Matrix4<T> &_mat) const;
         bool operator!=(const Matrix4<T> &_mat) const;
+
+        Vector4<T> operator[](size_t i) const { return (&row1)[i]; }
+        Vector4<T>& operator[](size_t i) { return (&row1)[i]; }
 
 
         /// Find the determinant of current matrix instance

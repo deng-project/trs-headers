@@ -55,6 +55,9 @@ namespace TRS {
         inline bool operator==(const Vector2<T> &_vec) const;
         inline bool operator!=(const Vector2<T> &_vec) const;
 
+        inline T operator[](size_t i) const { return (&first)[i]; }
+        inline T& operator[](size_t i) { return (&first)[i]; }
+
 
         /**
          * Get the total length of the vector (T must be a numeral)
@@ -351,6 +354,9 @@ namespace TRS {
         inline bool operator!=(const Vector3<T> &_vec) const;
         inline bool operator==(const Vector2<T> &_vec) const;
         inline bool operator!=(const Vector2<T> &_vec) const;
+
+        inline T operator[](size_t i) const { return (&first)[i]; }
+        inline T& operator[](size_t i) { return (&first)[i]; }
 
 
         /// Get the current length of the vector
@@ -732,6 +738,9 @@ namespace TRS {
         inline bool operator!=(const Vector2<T> &_vec) const;
         inline bool operator==(const Vector3<T> &_vec) const;
         inline bool operator!=(const Vector3<T> &_vec) const;
+
+        inline T operator[](size_t i) const { return (&first)[i]; }
+        inline T& operator[](size_t i) { return (&first)[i]; }
 
 
         /// Get the current length of the vector
