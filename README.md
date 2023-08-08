@@ -1,7 +1,7 @@
 # TRS headers
 
 Headers containing structures for defining vectors, points, matrices and
-quaternions. 
+quaternions necessary for basic linear algebra support in C++. 
 
 ```c++
 // vector classes
